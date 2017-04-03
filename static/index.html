@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="DegreeConverter">
+ <head>
+  <title>Degree Converter</title>
+  <link rel="stylesheet" href="/default.css">
+ </head>
+ <body>
+  <div id="container" ng-controller="app">
+   <div>
+    <label>Celsius</label>
+    <input type="number" step="0.01" ng-model="celsius" ng-keyup="convert($event)">
+   </div>
+   <div>
+    <label>Fahrenheit</label>
+    <input type="number" step="0.01" ng-model="fahrenheit" ng-keyup="convert($event)">
+   </div>
+  </div>
+  <script src="/angular/angular.min.js"></script>
+  <script src="/controller.js"></script>
+ </body>
+</html>
